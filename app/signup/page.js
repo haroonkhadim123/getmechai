@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import Loader from '../component/Loader';
 
 
-const page = () => {
+const SignupPage = () => {
   const router = useRouter();
   const [form, setform] = useState({ name: '', email: '', password: '' })
     const [erroremail, seterroremail] = useState("")
@@ -117,4 +117,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default SignupPage;

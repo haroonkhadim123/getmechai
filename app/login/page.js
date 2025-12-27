@@ -92,9 +92,10 @@ const LoginPage = () => {
   {loader ? <Loader /> : "Login"}
 </button>
 
-          <p className="text-white text-center mt-2">
-            Don't have an account? <Link href="/signup" className="text-blue-500">Sign up</Link>
-          </p>
+        <p className="text-white text-center mt-2">
+  Don&apos;t have an account? <Link href="/signup" className="text-blue-500">Sign up</Link>
+</p>
+
         </form>
       </div>
     </div>
