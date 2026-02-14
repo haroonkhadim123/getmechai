@@ -5,6 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import toast from "react-hot-toast";
 import Loader from "./Loader";
+import Image from "next/image";
 
 const Navbar = () => {
   const { data: session } = useSession();
@@ -55,10 +56,11 @@ const Navbar = () => {
   return (
     <div className="bg-slate-800 md:p-4 md:px-40 px-2 p-2 flex justify-between items-center shadow-2xl">
       {/* Logo */}
-      <Link href="/" className="flex items-center gap-2 text-white font-bold">
-        <img width={40} src="/tea.gif" alt="logo" />
-        GetmeChai
-      </Link>
+   <Link href="/" className="flex items-center gap-2 text-white font-bold">
+  <Image src="/tea.gif" alt="logo" width={40} height={40} />
+  GetmeChai
+</Link>
+
 
       <div className="flex gap-4 items-center">
         {/* Dropdown */}
